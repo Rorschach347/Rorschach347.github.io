@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    font-size: 18px;
+    background-color: #FF9B19;
+    /* background-color: black; */
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: #FF9B19;
+    display: flex;
+    flex-wrap: wrap;    /* wrap onto multiple lines */
+    /* align-items: center;    Pack items around the center */
+    align-content: center;
+}
+.top{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top img{
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 0px;
+    display:  inline-block;
+}
+.top h3{
+    font-size: 50px;
+    margin: 36px 15px;
+    display:  inline-block;
+}
+.top2 span{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 10px;
+}
+.bottom{
+    margin-top: 32px;
+    width: 100%;
+    /* background-color: red; */
+}
+.bottom ul{
+    /* background-color: #FF9B19; */
+    width: 68%;
+    margin: auto;    /* horizontally centered */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bottom ul li{  
+    width: 16%;
+    /* display: inline-block; */
+    /* list-style: url('/media/examples/rocket.svg'); */
+    list-style: none;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(131, 122, 122);
+    border-radius: 15%;
+}
+.bottom ul li a{
+    color: #FF9B19;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 140px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;    /* Pack items around the center */
+}
+.bottom ul li a:hover{
+    color: rgb(202, 62, 27);
+}
+.bottom ul li a img{
+    width: 64px;
+    height: 64px;
+}
+.bottom ul li a span{
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* index Project */
+/* ========================== */
+/* ========================== */
+.index-sub{
+    margin-top: -10px;
+    margin-bottom: -90px;
+}
+.index-more-info{
+    color: white;
+}
+.project{
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 30px auto;
+}
+.project a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+.project h3{
+    font-size: 38px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.project li{
+    position: relative;
+    float: left;
+    margin-right: 165px;
+    margin-left: 50px;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+
+}
+.project li:nth-last-child(2){
+    margin-right: 50px;
+}
+.project img{
+    width: 600px;
+    height: 390px;
+    /* border-radius: 10%; */
+}
+.project .mask1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 460px;
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.6));
+    opacity: 0;
+    transition: all 0.5s;
+}
+.project li:hover .mask1 {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+}
+.project .strict{
+    width: 600px;
+    height: 390px;
+    overflow: hidden;
+}
+.project li img {
+    transition: all .5s;
+    border-radius: 10%;
+}
+.project li:hover img {
+    transform: scale(1.2);
+}
+.project .More-info{
+    position: absolute;
+    bottom: -50px;
+}
+.project .More-info span{
+    color: black;
+    /* color: white; */
+    padding-left: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+.project .More-info i{
+    vertical-align: middle;
+}
+.project li:hover .More-info{
+    transform: translateY(-80px);
+}
+
+
+/* nav */
+/* ========================= */
+.navzcx{
+	width: 100%;
+	height: 8vh;
+	line-height: 8vh;
+	background: rgba(255,255,255,0.3);
+    /* background: rgb(172, 159, 159); */
+	text-align: center;
+}
+.navzcx a {
+	margin: 0 26px;
+	text-decoration: none;
+	font-size: 27px;
+	font-weight: bolder;
+	color: #FFFFFF;
+}
+.navzcx .active{
+    color: black;
+	/* text-shadow: 2px 3px 4px #FFFFFF; */
+}
+.navzcx a:hover{
+    color: red;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+
+
+
+/* Subheading */
+/* ========================== */
+.Subheading h2 {
+  font-size: 38px;
+  font-weight: 2000;
+  margin: 50px 50px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.Subheading h2::before {
+    content: "";
+    width: 60px;
+    height: 6px;
+    display: inline-block;
+    background: white;
+    margin: 12px 12px;
+  }
+.Subheading h2::after {
+  content: "";
+  width: 60px;
+  height: 6px;
+  display: inline-block;
+  background: white;
+  margin: 12px 8px;
+}
+
+/* Bio */
+/* ========================== */
+.boxzcx{
+	width: 100%;
+	height: 80vh;
+}
+.bio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 54vh;
+	margin: auto;
+    flex-wrap: wrap;
+}
+.bio-img{
+	width: 350px;
+	height: 400px;
+	padding: 6px;
+	border: 5px dashed #FFFFFF;
+    border-radius: 50px;
+}
+.bio-img img{
+    height: 100%;
+	width: 100%;	
+    border-radius: 50px;
+}
+.bio-text {
+    text-decoration: none;
+	margin-left: 20px;
+	width: 500px;
+	height: 400px;
+	padding: 15px;
+	color: #FFFFFF;
+	border: 5px dashed #FFFFFF;
+    border-radius: 50px;
+}
+.bio-text p{
+    text-decoration: none;
+    font-size: 24px;
+	padding: 14px 0;
+	/* border-bottom: 1px solid #CCCCCC; */
+}
+
+/* footer */
+/* ========================== */
+.dotted-line{
+	width: 80%;
+	margin: auto;
+	color: #ccc;
+	margin-top: 100px;
+	border-top: 6px dashed white;
+}
+
+/* Skills */
+/* ========================== */
+/* ========================== */
+
+.skills ul{
+    /* background-color: #FF9B19; */
+    width: 60%;
+    margin: auto;    /* horizontally centered */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills ul li{  
+    width: 30%;
+    /* display: inline-block; */
+    /* list-style: url('/media/examples/rocket.svg'); */
+    list-style: none;
+    /* border: 1px solid white; */
+    /* background-color: white; */
+    border-radius: 5%;
+}
+.skills ul li a{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;    /* Pack items around the center */
+    padding: 60px 0;
+}
+.bottom ul li a:hover{
+    color: rgb(202, 62, 27);
+}
+.skills ul li a img{
+    width: 300px;
+    height: 180px;
+    border-radius: 50px;
+}
+
+
+/* Education */
+/* ========================== */
+/* ========================== */
+.Education{
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Education h3{
+    font-size: 38px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+.Education li{
+    position: relative;
+    float: left;
+    margin-right: 165px;
+    margin-left: 50px;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+
+}
+.Education li:nth-last-child(2){
+    margin-right: 50px;
+}
+.Education img{
+    width: 600px;
+    height: 390px;
+    /* border-radius: 10%; */
+}
+.Education .mask1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 460px;
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.6));
+    opacity: 0;
+    transition: all 0.5s;
+}
+.Education li:hover .mask1 {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+}
+.Education li .strict{
+    width: 600px;
+    height: 390px;
+    overflow: hidden;
+}
+.Education li img {
+    transition: all .5s;
+    border-radius: 10%;
+}
+.Education li:hover img {
+    transform: scale(1.2);
+}
+.Education .More-info{
+    position: absolute;
+    bottom: -50px;
+}
+.Education .More-info span{
+    /* color: black; */
+    padding-left: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+.Education .More-info i{
+    vertical-align: middle;
+}
+.Education li:hover .More-info{
+    transform: translateY(-80px);
+}
+
+
+
+/* Contact */
+/* ========================== */
+/* ========================== */
+.contact{
+    width: 50%;
+	height: 55vh;
+    color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+}
+.contact ul{
+	width: 100%;
+	border: 5px dashed #FFFFFF;
+	border-radius: 50px;
+	padding: 30px;
+}
+.contact ul li {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+.contact ul li img{
+    width: 60px;
+    height: 60px;
+}
+.contact ul li p{
+	font-size: 32px;
+    font-weight: 800;
+	margin-left: 20px;
+}
+
+
+
+
+
+
